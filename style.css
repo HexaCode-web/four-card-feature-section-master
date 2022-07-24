@@ -1,0 +1,105 @@
+/* =============================
+general layout
+============================= */
+.html{
+    font-size: 15px;
+}
+body{
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    background-color: white;
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 3.5%;
+}
+.text{
+    text-align: center;
+}
+img{
+    opacity: 90%;
+    margin-left: 250px;
+    width: 25%;
+}
+/* =============================
+boxes layout
+============================= */
+.box{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px;
+    padding-left: 15px;
+    border-radius: 5%;
+    width: 350px;
+    height: 250px;
+    background-color: #fafafa;
+}
+.one{
+    border-top: 10px solid cyan;
+    margin-top: 35%;
+   margin-left: 7%;
+  
+}
+.col2{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.three{
+    margin-top: 35%;
+    border-top: 5px solid #549cf0;
+   
+}
+.four{
+    border-top: 5px solid #fcae4a;
+  
+}
+.two{
+    border-top: 5px solid #d25f62;
+
+}
+/* =============================
+TYPOGRAPHY
+============================= */
+h1,h2,h3,p{
+    font-family: "Poppins";
+}
+h1{
+    margin: auto;
+    font-weight: 400;
+    font-size: 2rem;
+}
+h2{
+    margin: auto;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+p{
+    
+    opacity: 70%;
+    font-weight: 200;
+}
+/* =============================
+MEDIA
+============================= */
+@media(max-width:600px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .box{margin: auto;}
+
+}
